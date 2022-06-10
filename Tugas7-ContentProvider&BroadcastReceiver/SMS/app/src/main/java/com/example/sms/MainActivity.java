@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
                 != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
+                    ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.SEND_SMS},
                     REQUEST_SEND_SMS);
         }
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void onClick(View v) {
-//---the "phone number" of your emulator should be 5554---
+    //---the "phone number" of your emulator should be 5554---
         sendSMS("5554", "Hello my friends!");
     }
     //---sends an SMS message---
